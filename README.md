@@ -48,11 +48,14 @@ You'll be building the following tables for your e-commerce platform 🛍️:
 📚 attribute_category – Groups attributes into categories (e.g., physical, technical)
 🧪 attribute_type – Defines types of attributes (e.g., text, number, boolean)
 
+---
 
-RELATIONSHIPS
-1. product_category and product - A product category can belong to many products (1:Many)
-2. product_image and product - A product can have multiple images (1:Many)
-3. product and product_item - A product can have multiple variations (1:Many)
-4. brand and product - A product can have a brand (1:Many)
-5. size_option and size_category - A size category can have multiple sizes (1:Many)
-6. 
+## 🔄 Data Flow
+
+1. A **product** is created with a name, price, category, and brand.
+2. Product **images** are linked via the `product_image` table.
+3. Variations (size/color) are defined in `product_variation`.
+4. `product_item` tracks stock and price per variation.
+5. Products can have **custom attributes** such as weight or material, stored in `product_attribute`.
+
+---
