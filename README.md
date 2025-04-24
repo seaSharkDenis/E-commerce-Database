@@ -49,6 +49,11 @@ You'll be building the following tables for your e-commerce platform 🛍️:
 🧪 attribute_type – Defines types of attributes (e.g., text, number, boolean)
 
 ---
+## 📊 ERD Diagram
+
+![ERD Diagram](ecommerce.png)
+
+---
 
 ## 🔄 Data Flow
 
